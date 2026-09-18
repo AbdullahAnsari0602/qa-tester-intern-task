@@ -1,0 +1,27 @@
+ID,Title,Precondition,Steps,Expexted Result,Priority
+TC-001,Login with valid Username And Password,Login page is open,"Enter standard_user and secret_sauce, then click Login",User should be logged in and Products page should open,High
+TC-002,Login with invalid username,Login page is open,"Enter invalid username and valid password, then click Login",User should not be logged in and error message should be displayed,High
+TC-003,Login with invalid password,Login page is open,"Enter valid username and invalid password, then click Login","Enter valid username and invalid password, then click Login",High
+TC-004,Login with empty fields,Login page is open,"Leave username and password empty, then click Login",error message should be displayed,High
+TC-005,Verify product details,User is logged in and on the Products page,Check any product,"Product image, name, description, price and Add to cart button should be displayed",High
+TC-006,Open product details page,User is logged in and on the Products page,Click on any product name,Selected product's details page should open,High
+TC-007,Sort products by Name A to Z,User is on the Products page,Select Name (A to Z) from the dropdown,Products should be sorted alphabetically from A to Z,High
+TC-008,Sort products by Name Z to A,User is on the Products page,Select Name (Z to A) from the dropdown,Select Name (Z to A) from the dropdown,High
+TC-009,Sort products by Price Low to High,User is on the Products page,Select Price (low to high),Products should be sorted from lowest price to highest price,High
+TC-010,Sort products by Price High to Low,User is on the Products page,Select Price (high to low),Products should be sorted from highest price to lowest price,High
+TC-011,Add a product to cart,User is logged in and on Products page,Click Add to cart for any product,Product should be added to the cart and cart count should increase to 1,High
+TC-012,Add multiple products to cart,User is on Products page,Click Add to cart for two or more products,All selected products should be added and cart count should show the correct number,High
+TC-013,Remove product from Products page,A product has been added to cart,Click Remove for the added product,Product should be removed and cart count should decrease,High
+TC-014,View added product in cart,At least one product is added to cart,Click the cart icon,Cart page should open and the selected product should be displayed,High
+TC-015,Remove product from Cart,Cart contains at least one product,Open Cart  click Remove,Selected product should be removed from the cart,High
+TC-016,Continue shopping from Cart,Cart page is open,Click Continue Shopping,User should be redirected to the Products page,Med
+TC-017,Verify Twitter link in footer,User is logged in and on the Products page,Scroll to the bottom of the page. Click the X icon.,Twitter page should open correctly.,Low
+TC-018,Verify Facebook link in footer,User is logged in and on the Products page,Scroll to the bottom of the page. Click the Facebook icon.,Facebook page should open correctly.,Low
+TC-019,Verify LinkedIn link in footer,User is logged in and on the Products page,Scroll to the bottom of the page.Click the LinkedIn icon.,LinkedIn page should open correctly.,Low
+TC-020,Verify Checkout button,User is logged in and cart contains at least one product,Open Cart and click Checkout,User should be redirected to the Checkout Information page,High
+TC-021,Checkout with valid information,Cart contains at least one product,"Enter valid First Name, Last Name and Postal Code click Continue",Checkout Overview page should be displayed,High
+TC-022,Checkout with all fields empty,Checkout Information page is open,Leave all fields empty click Continue,Appropriate validation message should be displayed,High
+TC-023,Checkout with empty First Name,Checkout Information page is open,"Leave First Name empty, enter Last Name and Postal Code click Continue",First Name validation message should be displayed,High
+TC-024,Checkout with empty Last Name,Checkout Information page is open,"Enter First Name and Postal Code, leave Last Name empty ? click Continue",Last Name validation message should be displayed,High
+TC-025,Checkout with empty Postal Code,Checkout Information page is open,"Enter First Name and Last Name, leave Postal Code empty click Continue",Postal Code validation message should be displayed,High
+TC-026,Checkout with empty cart,User is logged in and cart is empty," Open Cart.  Click Checkout.  Enter valid First Name, Last Name and Postal Code.  Click Continue.  Click Finish.",User should not be able to place an order when the cart is empty.,High
